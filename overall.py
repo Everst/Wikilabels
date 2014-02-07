@@ -1049,9 +1049,9 @@ if __name__ == "__main__":
             
             
         def removeall(self):
-            self.filelist = ["docs\\provisional\\" + f for f in os.listdir("docs\\provisional") if re.search('\.txt', f)]
-            self.filelist2 = ["docs\\labels\\" + f for f in os.listdir('docs\\labels') if re.search('\.txt', f)]
-            self.filelist3 = ["docs\\provisional\\sample\\" + f for f in os.listdir('docs\\provisional\\sample') if re.search('\.txt', f)]
+            self.filelist = ["docs/provisional/" + f for f in os.listdir("docs/provisional") if re.search('\.txt', f)]
+            self.filelist2 = ["docs/labels/" + f for f in os.listdir('docs/labels') if re.search('\.txt', f)]
+            self.filelist3 = ["docs/provisional/sample/" + f for f in os.listdir('docs/provisional/sample') if re.search('\.txt', f)]
             self.filelist.extend(self.filelist2)
             self.filelist.extend(self.filelist3)
             for f in self.filelist:
